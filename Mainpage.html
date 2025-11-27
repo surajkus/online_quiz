@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Subjects Home Page</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: "Poppins", sans-serif;
+        background: linear-gradient(135deg, #6fa3ef, #8360c3);
+        padding: 0;
+        color: #fff;
+    }
+
+    /* NAV BAR */
+    .navbar {
+        width: 100%;
+        background: #2c3e50; 
+        padding: 15px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+
+    .navbar-title {
+        font-size: 22px;
+        font-weight: 600;
+        color: white;
+        letter-spacing: 1px;
+    }
+
+    .home-btn {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 500;
+        text-decoration: none;
+        padding: 8px 15px;
+        border-radius: 5px;
+        background: #34495e;  /* Only color */
+    }
+
+    h1 {
+        text-align: center;
+        margin: 30px 0;
+        font-size: 36px;
+        text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    }
+
+
+
+    a{
+        text-decoration: none;
+        font-size: 18px;
+    }
+    .container {
+        max-width: 900px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+        padding: 20px;
+    }
+
+    .box {
+        background: rgba(255,255,255,0.2);
+        backdrop-filter: blur(8px);
+        padding: 40px 20px;
+        border-radius: 20px;
+        text-align: center;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        cursor: pointer;
+        transition: 0.4s ease;
+        border: 1px solid rgba(255,255,255,0.3);
+    }
+
+    .box:hover {
+        transform: translateY(-10px) scale(1.05);
+        background: rgba(255,255,255,0.35);
+    }
+
+    .box h2 {
+        margin-top: 15px;
+        font-size: 24px;
+        text-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+        color: #ffffff;
+    }
+
+    .icon {
+        font-size: 50px;
+    }
+    img{
+        width: 80px;
+        border-radius: 10px;
+    }
+</style>
+</head>
+<body>
+
+<!-- NAV BAR -->
+<div class="navbar">
+    <div class="navbar-title">My Learning Portal</div>
+    <a href="Mainpage.html" class="home-btn">Home</a>
+</div>
+
+<h1>WELCOME MY Quiz!</h1>
+
+<div class="container">
+    <div class="box">
+        <div class="icon"><img src="C_lang.png" alt=""></div>
+        <a href="C_programming_index.html">C Programming</a>
+    </div>
+
+    <div class="box">
+        <div class="icon"><img src="javascript.jpg" alt=""></div>
+        <a href="javaScript_index.html">javascript</a>
+    </div>
+
+    <div class="box">
+        <div class="icon"><img src="python.jpg" alt=""></div>
+        <a href="python_index.html">Python</a>
+    </div>
+
+    <div class="box">
+        <div class="icon"><img src="java.png" alt=""></div>
+        <a href="java_Index.html">Java</a>
+    </div>
+</div>
+
+</body>
+</html>

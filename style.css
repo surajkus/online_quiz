@@ -1,0 +1,58 @@
+body {
+  background: linear-gradient(270deg, #c79fe9, #4a00e0);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  color: #fff;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+  .navbarss {
+        width: 100%;
+        background: #2c3e50; 
+        padding: 15px 20px;
+      
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+
+    .navbar-titless {
+        font-size: 22px;
+        font-weight: 600;
+        color: white;
+        letter-spacing: 1px;
+    }
+
+    .home-btnss {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 500;
+        text-decoration: none;
+        padding: 8px 15px;
+        border-radius: 5px;
+        background: #34495e;  /* Only color */
+    }
+
+/* Correct answer style */
+.correct {
+    border: 2px solid #28a745 !important; /* green border */
+    background-color: #6fe48a;
+    color: #155724;
+  }
+  
+  /* Wrong answer style */
+  .wrong {
+    border: 2px solid #dc3545 !important; /* red border */
+    background-color: #f47c86;
+    color: #721c24;
+  }
+    
+  
